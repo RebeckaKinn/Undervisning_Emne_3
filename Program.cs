@@ -57,9 +57,9 @@ Console.WriteLine("Write a number:");
 var input1 = Console.ReadLine();
 Console.WriteLine(" + ");
 var input2 = Console.ReadLine();
-Console.WriteLine($"= {AddNumbers(Convert.ToInt32(input1), Convert.ToInt32(input2))}");
+Console.WriteLine($"= {AddNumbers(Convert.ToDouble(input1), Convert.ToDouble(input2))}");
 
-int AddNumbers(int number1, int number2)
+double AddNumbers(double number1, double number2)
 {
     return number1 + number2;
 }
