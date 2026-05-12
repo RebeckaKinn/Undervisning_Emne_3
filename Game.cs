@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
-using System.Text;
-
-namespace Undervisning_Emne_3
+﻿namespace Undervisning_Emne_3
 {
     internal class Game
     {
@@ -23,12 +18,12 @@ namespace Undervisning_Emne_3
                 Console.WriteLine("1 - stein\n2 - saks\n3 - papir\n4 - Exit");
                 int answer = Convert.ToInt32(Console.ReadLine());
 
-                if(answer == 4)
+                if (answer == 4)
                 {
                     isRunning = false;
                     continue;
                 }
-               
+
                 int computerChoice = rand.Next(1, 4);
                 if (answer == computerChoice)
                 {
