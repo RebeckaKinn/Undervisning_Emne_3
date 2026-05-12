@@ -1,4 +1,10 @@
 ﻿
+using Undervisning_Emne_3;
+
+var game = new Game();
+game.Run();
+
+
 
 /*
  * Klasser
