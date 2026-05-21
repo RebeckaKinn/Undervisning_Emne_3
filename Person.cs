@@ -2,7 +2,7 @@
 {
     internal class Person
     {
-        public string name;
+        public string name { get; private set; }
         public int age;
         public string adress;
 
@@ -11,6 +11,18 @@
             name = Name;
             age = Age;
             adress = Adress;
+        }
+        public Person(string Name = "ukjent", int Age = 0)
+        {
+            name = Name;
+            age = Age;
+            adress = "Ukjent";
+        }
+        public Person(int Age)
+        {
+            name = "Ukjent";
+            age = Age;
+            adress = "Ukjent";
         }
 
         public void PrintInfo()

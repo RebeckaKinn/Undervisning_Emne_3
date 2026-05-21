@@ -6,5 +6,22 @@
         {
 
         }
+
+        public void Print()
+        {
+            Console.WriteLine("Tom!");
+        }
+        public void Print(string txt)
+        {
+            Console.WriteLine(txt);
+        }
+        public void Print(int number)
+        {
+            Console.WriteLine(number);
+        }
+        public void Print(string txt, int number)
+        {
+            Console.WriteLine($"{txt} {number}");
+        }
     }
 }
